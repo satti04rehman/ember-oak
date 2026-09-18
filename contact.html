@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact &amp; Reservations — Ember &amp; Oak Islamabad</title>
+<meta name="description" content="Reserve a table at Ember &amp; Oak, Islamabad. Dinner Tue–Sun 6pm–midnight. Private room for 24. Call 051 234 8890 or book online." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="sp" id="sp" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="top-bar"><div class="container"><span>Dinner service · Tue–Sun, 6:00pm – midnight</span><span>Reservations: <strong>051 234 8890</strong></span></div></div>
+<header id="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Ember<span>&amp;Oak</span></a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-flame" href="contact.html#book">Book a table</a>
+    </nav>
+    <a class="btn btn-flame" href="contact.html#book">Book a table</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Find us, book us</span>
+      <h1>Contact &amp; <em>reservations</em></h1>
+      <p>Dinner service Tue–Sun, 6pm–midnight. Book from the form or call us directly.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Ember &amp; Oak</h2>
+        <p class="dish-note">F-7 Markaz, Islamabad<br />Phone · <a href="tel:0512348890">051 234 8890</a><br />WhatsApp · <a href="https://wa.me/9232348890">+92 323 488 90</a></p>
+        <h3>Hours</h3>
+        <p class="dish-note">Tue–Sun · 6:00pm – midnight<br />Closed Mondays (kitchen prep day)</p>
+        <h3>Private room</h3>
+        <p class="dish-note">Seats up to 24 for family dinners and business evenings. Mention it in the form and we'll call to confirm.</p>
+      </div>
+      <form class="appt-card booking-form" id="book">
+        <h3>Book a table</h3>
+        <div class="field">
+          <label for="bname">Your name</label>
+          <input id="bname" name="bname" type="text" placeholder="Full name" required />
+        </div>
+        <div class="field">
+          <label for="bphone">Phone / WhatsApp</label>
+          <input id="bphone" name="bphone" type="tel" placeholder="03xx xxxxxxx" required />
+        </div>
+        <div class="field">
+          <label for="bguests">Guests</label>
+          <select id="bguests" name="bguests">
+            <option>2 guests</option>
+            <option>3–4 guests</option>
+            <option>5–6 guests</option>
+            <option>7–10 guests</option>
+            <option>Private room (up to 24)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bdate">Evening</label>
+          <input id="bdate" name="bdate" type="date" required />
+        </div>
+        <div class="field">
+          <label for="bnote">Anything we should know?</label>
+          <input id="bnote" name="bnote" type="text" placeholder="Occasion, allergies, seating" />
+        </div>
+        <button class="btn btn-soft btn-block" type="submit">Request reservation</button>
+        <p class="form-note" id="form-note" hidden>Thanks — our team reads every request and confirms by phone within a few hours.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div class="f-brand">Ember <span>&amp; Oak</span></div>
+    <div class="f-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="contact.html">Contact</a></div>
+    <p>F-7 Markaz, Islamabad · <a href="tel:0512348890">051 234 8890</a> · Dinner Tue–Sun 6pm–midnight</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
